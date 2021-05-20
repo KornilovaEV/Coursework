@@ -33,6 +33,7 @@ class CustomBot(sc2.BotAI):
         self.PLAYER_BRAIN = pickle.load(f)
         f.close()
 
+        
     def on_end(self, game_result):
         print('---End of the game---')
         f = open("results\\generation_" + str(self.GENERATION) +
