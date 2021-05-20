@@ -220,7 +220,7 @@ class CustomBot(sc2.BotAI):
 
             if len(self.units(VOIDRAY).noqueue) > 0:
                 if not self.end_game:
-                    choice = neural_network.predict_solo_output(self.PLAYER_BRAIN, [
+                    choice = Prediction_of_the_result.predict_solo_output(self.PLAYER_BRAIN, [
                         self.GLOBAL_TIME / 100.0,
                         len(self.units(VOIDRAY).noqueue),
                         len(self.known_enemy_units.exclude_type([SCV])),
