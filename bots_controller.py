@@ -252,7 +252,7 @@ class CustomBot(sc2.BotAI):
 
 
 
-run_game(maps.get("AbyssalReefLE"), [
+run_game(maps.get("AcropolisLE"), [
     Bot(Race.Protoss, CustomBot()),
     Computer(Race.Terran, Difficulty.Easy)
 ], realtime=False)
